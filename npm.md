@@ -22,3 +22,12 @@ npm link 请包添加到全局 node_modules
 ```
 
 3. npm link 请包添加到全局 node_modules
+
+npm dedupe 可以删除重复副本（这个问题我感觉辉）
+
+### 如何管理你的npm 依赖
+[npm依赖树构建](https://segmentfault.com/a/1190000007681042)
+
+
+过长的依赖树会导致 require时的查询时间过长（依赖查找是层级递增的）
+

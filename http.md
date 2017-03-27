@@ -41,6 +41,7 @@ http回应由以下元素组成：
 
 requests部分header参数（举例）：
 
+Accept 指定客户端能够接收的内容类型
 Accept-Encoding 指定浏览器可以支持的文本服务器返回内容压缩编码类型
 Accept-Ranges 请求网页实体的字段范围
 Authorization  http授权的授权证书
