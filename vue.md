@@ -22,3 +22,34 @@ M 前端的M 指后端的 M C（通过restfulAPI连接）
 ### 实例的方法 和属性 []()
 
 ### 实例的生命周期
+
+
+### $on $emit
+
+只是触发和接收当前的实例上的事件。
+
+### slot-scope
+
+作用域插槽
+
+定义了子组件所能接收的数据
+
+场景：既可以复用子组件的slot，又可以使slot内容不一致。
+
+### slot 中的ref 属于调用的组件
+
+
+### 生命周期
+
+beforeCreate
+created
+beforeMount
+mounted
+beforeUpdate
+updated
+beforeActivated
+activated
+beforeDestroy
+destroyed
+
+

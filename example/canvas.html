@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript">
+    // window.addEventListener('load', function() {
+
+    //   init();
+    // }, false);
+  </script>
+  <script type="text/javascript">
+  /*! modernizr 3.5.0 (Custom Build) | MIT ** https://modernizr.com/download/?-canvas-setclasses !*/
+  !function(e,n,t){function s(e,n){return typeof e===n}function a(){var e,n,t,a,o,i,f;for(var c in l)if(l.hasOwnProperty(c)){if(e=[],n=l[c],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(a=s(n.fn,"function")?n.fn():n.fn,o=0;o<e.length;o++)i=e[o],f=i.split("."),1===f.length?Modernizr[f[0]]=a:(!Modernizr[f[0]]||Modernizr[f[0]]instanceof Boolean||(Modernizr[f[0]]=new Boolean(Modernizr[f[0]])),Modernizr[f[0]][f[1]]=a),r.push((a?"":"no-")+f.join("-"))}}function o(e){var n=c.className,t=Modernizr._config.classPrefix||"";if(u&&(n=n.baseVal),Modernizr._config.enableJSClass){var s=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(s,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),u?c.className.baseVal=n:c.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):u?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}var r=[],l=[],f={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){l.push({name:e,fn:n,options:t})},addAsyncTest:function(e){l.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=f,Modernizr=new Modernizr;var c=n.documentElement,u="svg"===c.nodeName.toLowerCase();Modernizr.addTest("canvas",function(){var e=i("canvas");return!(!e.getContext||!e.getContext("2d"))}),a(),o(r),delete f.addTest,delete f.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);    
+
+  </script>
+</head>
+<body>
+  <div>
+    <canvas id="canvas-1" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-2" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-3" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-4" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-5" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-6" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-7" width="800" height="800">
+      dont's support canvas.
+    </canvas>  
+    <canvas id="canvas-8" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-9" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-10" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-11" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-12" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-13" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-14" width="800" height="800">
+      dont's support canvas.
+    </canvas>                              
+    <canvas id="canvas-15" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-16" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-17" width="800" height="800">
+      dont's support canvas.
+    </canvas>
+    <canvas id="canvas-18" width="800" height="800">
+      dont's support canvas.
+    </canvas>   
+    <canvas id="canvas-19" width="800" height="800">
+      dont's support canvas.
+    </canvas>              
+    <canvas id="canvas-20" width="800" height="800">
+      dont's support canvas.
+    </canvas> 
+    <canvas id="canvas-21" width="800" height="800">
+      dont's support canvas.
+    </canvas>     
+    <canvas id="canvas-22" width="800" height="800">
+      dont's support canvas.
+    </canvas> 
+    <canvas id="canvas-23" width="800" height="800">
+      dont's support canvas.
+    </canvas> 
+    <canvas id="canvas-24" width="800" height="800">
+      dont's support canvas.
+    </canvas> 
+    <canvas id="canvas-25" width="800" height="800">
+      dont's support canvas.
+    </canvas> 
+    <canvas id="canvas-26" width="800" height="800">
+      dont's support canvas.
+    </canvas> 
+  </div>
+</body>
+
+<script type="text/javascript">
+  let time = 0;
+  let fadeIn = true;
+  let alpha = 0;
+
+  function init() {
+    const canvas = document.querySelector('#canvas-1');
+    if (!Modernizr.canvas) {
+      return false;
+    }
+    const context = canvas.getContext('2d');
+    context.globalAlpha = 1;
+    context.fillStyle = '#616161';
+    context.fillRect(0, 0, 500, 500);
+    context.fillStyle = '#ed3e3e';
+    context.fillRect(100, 100, 700, 700);
+
+    context.fillStyle = '#000000';
+    context.font = '20px PingFang SC';
+    context.textBaseline = 'middle';
+    context.fillText(`Hello World! ${time ++}`, 180, 100);
+    context.fillText('ggya!', 180, 200);
+    /*
+      const image = new Image();
+
+      image.onload = function() {
+        context.drawImage(image, 50, 50);
+      }
+
+      image.src = '../img/mobx_flow.png'; 
+
+      let text = canvas.toDataURL('image/png');
+      console.log(text);  
+    */
+
+    context.strokeStyle = '#4bbbfa';
+    context.strokeRect(0, 0, 800, 800);
+    context.fillStyle = '#313131';
+    context.font = '24px PingFang SC';
+    context.globalAlpha = alpha;
+    context.fillText('Happy New Year.', 400, 400);
+    // console.log(alpha); 
+    alpha = fadeIn ? alpha + 0.1 : alpha - 0.1;
+
+    if (alpha >= 1) {
+      fadeIn = false;
+    } else if (alpha <= 0) {
+      fadeIn  = true;
+    }
+
+    context.clearRect(0, 0, 100, 100);
+  }
+
+  function loopGame() {
+    setTimeout(loopGame, 200);
+
+    init();
+  }
+
+  loopGame();
+</script>
+
+<script type="text/javascript">
+  const canvas = document.querySelector('#canvas-1');
+</script>
+<script type="text/javascript" src="./canvas.js"></script>
+
+</html>
+
+
